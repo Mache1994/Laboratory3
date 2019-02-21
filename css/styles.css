@@ -1,0 +1,148 @@
+/*Style from w3 school*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+h2{
+  text-align: center;
+  font-size: 20px;
+}
+
+html {
+  height: 100%;
+}
+
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  margin: auto;
+  padding: 0;
+  height: 100%;
+}
+
+fieldset{
+    text-overflow: clip;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 20px;
+    margin: auto;
+    margin-top:20px;
+}
+
+.formElement{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1em;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.wrapper {
+    min-width: 320px;
+    height: auto;
+}
+
+.todoTitle{
+    vertical-align: middle;
+    color: #333;
+    font-size: 25px;
+    margin: 10px auto;
+    width: 200px;
+}
+
+.submitButton{
+  color: #e7e7e7;
+}
+
+.submitButton, .clearButton, .markAllButton, .deleteButton {
+  background-color: rgba(3.9%, 23.5%, 48.2%, 0.99);
+  display: inline-block;
+  margin-top: 10px;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.buttons{
+  margin: 0 auto 10px auto;
+  width: 90%; 
+}
+
+.footer {
+  padding: 1rem;
+  display: block;
+  background-color:rgba(33.3%, 33.3%, 33.3%, 0.3);
+  text-align: center;
+  bottom: 0;
+  position:fixed;
+  width: 100%;
+}
+
+.banner {
+  overflow:hidden;
+  background-color:#2994DA;
+  text-align: center;
+}
